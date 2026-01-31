@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishant Naravarajula | Software Developer</title>
+
+    <meta name="author" content="Nishant Naravarajula" />
+    <meta
+      name="description"
+      content="Portfolio of Nishant Naravarajula, a software developer specializing in backend development, database optimization, and systems programming."
+    />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >Nishant<span class="text-primary">.</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="terminal.html">Terminal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Resume
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="assets/Nishant_Resume.pdf"
+                    target="_blank"
+                    ><i class="bi bi-eye me-2"></i>View</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="assets/Nishant_Resume.pdf"
+                    download
+                    ><i class="bi bi-download me-2"></i>Download</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="min-vh-100 d-flex align-items-center bg-dark text-white"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <p class="hello-text mb-2">>> Hello, I'm</p>
+            <h1 class="display-3 fw-bold mb-3">Nishant Naravarajula</h1>
+            <h2 class="h4 text-secondary mb-4">
+              MS Computer Science @ Northeastern University (Khoury College)
+            </h2>
+
+            <!-- Live Status Feature -->
+            <div class="live-status mb-4">
+              <span class="badge bg-success me-2">
+                <i class="bi bi-circle-fill me-1 blink"></i>Live
+              </span>
+              <span id="status-text" class="text-light"
+                >Currently building something cool...</span
+              >
+            </div>
+
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+              <a href="projects.html" class="btn btn-outline-light btn-lg"
+                >View Projects</a
+              >
+            </div>
+          </div>
+          <!--profile image-->
+          <div class="col-lg-5 text-center mt-5 mt-lg-0">
+            <img
+              src="images/profile.png"
+              alt="Nishant Naravarajula"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="display-6 fw-bold mb-4">About Me</h2>
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="lead">
+              I like building things that work well under the hood—optimized
+              queries, clean APIs, systems that don't break at 2 AM.
+            </p>
+            <p class="text-secondary">
+              Currently pursuing my MS in Computer Science at Northeastern
+              University, diving deeper into systems programming and software
+              architecture. I have hands-on experience with backend development,
+              database optimization, and building reliable software systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="display-6 fw-bold mb-4">Skills</h2>
+        <p class="text-secondary mb-4">
+          Click on a skill to see where I implemented it.
+        </p>
+
+        <div class="skill-category mb-4">
+          <h5 class="text-primary mb-3">Languages</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              href="projects.html?filter=python"
+              class="btn btn-outline-light skill-tag"
+              >Python</a
+            >
+            <a
+              href="projects.html?filter=java"
+              class="btn btn-outline-light skill-tag"
+              >Java</a
+            >
+            <a
+              href="projects.html?filter=cpp"
+              class="btn btn-outline-light skill-tag"
+              >C++</a
+            >
+            <a
+              href="projects.html?filter=c"
+              class="btn btn-outline-light skill-tag"
+              >C</a
+            >
+            <a
+              href="projects.html?filter=javascript"
+              class="btn btn-outline-light skill-tag"
+              >JavaScript</a
+            >
+            <a
+              href="projects.html?filter=sql"
+              class="btn btn-outline-light skill-tag"
+              >SQL</a
+            >
+          </div>
+        </div>
+
+        <div class="skill-category mb-4">
+          <h5 class="text-primary mb-3">Frameworks & Tools</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              href="projects.html?filter=flask"
+              class="btn btn-outline-light skill-tag"
+              >Flask</a
+            >
+            <a
+              href="projects.html?filter=react"
+              class="btn btn-outline-light skill-tag"
+              >React.js</a
+            >
+            <a
+              href="projects.html?filter=nodejs"
+              class="btn btn-outline-light skill-tag"
+              >Node.js</a
+            >
+            <a
+              href="projects.html?filter=docker"
+              class="btn btn-outline-light skill-tag"
+              >Docker</a
+            >
+            <a
+              href="projects.html?filter=git"
+              class="btn btn-outline-light skill-tag"
+              >Git/GitHub</a
+            >
+            <a
+              href="projects.html?filter=linux"
+              class="btn btn-outline-light skill-tag"
+              >Linux</a
+            >
+          </div>
+        </div>
+
+        <div class="skill-category mb-4">
+          <h5 class="text-primary mb-3">Databases</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              href="projects.html?filter=mysql"
+              class="btn btn-outline-light skill-tag"
+              >MySQL</a
+            >
+            <a
+              href="projects.html?filter=mongodb"
+              class="btn btn-outline-light skill-tag"
+              >MongoDB</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="display-6 fw-bold mb-4">Experience</h2>
+
+        <!-- Job 1 -->
+        <div class="experience-item mb-5">
+          <div
+            class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+          >
+            <div>
+              <h4 class="fw-bold mb-1">Software Developer Intern</h4>
+              <p class="text-primary mb-0">Balina IT Solutions</p>
+            </div>
+            <span class="badge bg-secondary">Jun 2024 - Dec 2024</span>
+          </div>
+          <p class="text-secondary mb-2">
+            <i class="bi bi-geo-alt me-1"></i>Hyderabad, India
+          </p>
+          <ul class="text-light">
+            <li>
+              Developed and maintained backend services using Python and C++,
+              implementing robust error handling and data validation
+            </li>
+            <li>
+              Designed database schemas and optimized SQL queries for
+              high-performance data retrieval in production systems
+            </li>
+            <li>
+              Collaborated with cross-functional teams following Agile sprint
+              methodology
+            </li>
+            <li>
+              Created comprehensive technical documentation for software
+              modules, APIs, and system integration workflows
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hackathon -->
+        <div class="experience-item">
+          <div
+            class="d-flex justify-content-between align-items-start flex-wrap mb-2"
+          >
+            <div>
+              <h4 class="fw-bold mb-1">PPE Compliance Detection System</h4>
+              <p class="text-primary mb-0">
+                Computer Vision & AI-Enabled Monitoring
+              </p>
+            </div>
+            <span class="badge bg-secondary">Oct 2025</span>
+          </div>
+          <ul class="text-light">
+            <li>
+              Built real-time monitoring system using Python, OpenCV, and
+              machine learning for safety equipment detection
+            </li>
+            <li>Optimized data flow for sub-100ms latency requirements</li>
+            <li>
+              Implemented comprehensive error handling for hardware failures and
+              edge cases
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="display-6 fw-bold mb-4">Education</h2>
+
+        <div class="row g-4">
+          <!-- Northeastern -->
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary h-100">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Northeastern University</h4>
+                <p class="text-primary mb-2">
+                  Khoury College of Computer Sciences
+                </p>
+                <p class="text-light mb-2">
+                  Master of Science in Computer Science
+                </p>
+                <p class="text-secondary mb-0">
+                  <i class="bi bi-calendar me-1"></i>Expected May 2027
+                </p>
+                <p class="text-secondary">
+                  <i class="bi bi-geo-alt me-1"></i>Boston, MA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- GITAM -->
+          <div class="col-md-6">
+            <div class="card bg-black border-secondary h-100">
+              <div class="card-body">
+                <h4 class="card-title fw-bold">GITAM University</h4>
+                <p class="text-primary mb-2">Deemed to be University</p>
+                <p class="text-light mb-2">
+                  Bachelor of Technology in Computer Science
+                </p>
+                <p class="text-secondary mb-0">
+                  <i class="bi bi-calendar me-1"></i>July 2024
+                </p>
+                <p class="text-secondary">
+                  <i class="bi bi-geo-alt me-1"></i>Hyderabad, India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="display-6 fw-bold mb-4">Get in Touch</h2>
+        <p class="text-secondary mb-4">
+          Feel free to reach out for collaboration or just to say hello!
+        </p>
+
+        <div class="row g-4 mb-4">
+          <div class="col-auto">
+            <a
+              href="mailto:naravarajula.n@northeastern.edu"
+              class="btn btn-outline-light"
+            >
+              <i class="bi bi-envelope me-2"></i>Email
+            </a>
+          </div>
+          <div class="col-auto">
+            <a
+              href="https://github.com/nish-naravarajula"
+              target="_blank"
+              class="btn btn-outline-light"
+            >
+              <i class="bi bi-github me-2"></i>GitHub
+            </a>
+          </div>
+          <div class="col-auto">
+            <a
+              href="https://www.linkedin.com/in/nishant-naravarajula/"
+              target="_blank"
+              class="btn btn-outline-light"
+            >
+              <i class="bi bi-linkedin me-2"></i>LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Resume Buttons -->
+        <div class="d-flex gap-3 flex-wrap">
+          <a
+            id="resume-view-icon"
+            href="assets/Nishant_Resume.pdf"
+            target="_blank"
+            class="btn btn-primary btn-lg"
+          >
+            <i class="bi bi-eye me-2"></i>View Resume
+          </a>
+          <a
+            href="assets/Nishant_Resume.pdf"
+            download
+            class="btn btn-outline-primary btn-lg"
+          >
+            <i class="bi bi-download me-2"></i>Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-4 bg-dark text-center text-secondary border-top border-secondary"
+    >
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Nishant Naravarajula. All rights reserved.
+        </p>
+        <p class="mb-0 small">Built with HTML, CSS, JavaScript & Bootstrap</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

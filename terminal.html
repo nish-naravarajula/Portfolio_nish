@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal | Nishant Naravarajula</title>
+
+    <!-- Meta Information -->
+    <meta name="author" content="Nishant Naravarajula" />
+    <meta
+      name="description"
+      content="Interactive terminal simulator - Explore Nishant's portfolio through command line"
+    />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >Nishant<span class="text-primary">.</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="terminal.html">Terminal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Resume
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="assets/Nishant_Resume.pdf"
+                    target="_blank"
+                    ><i class="bi bi-eye me-2"></i>View</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="assets/Nishant_Resume.pdf"
+                    download
+                    ><i class="bi bi-download me-2"></i>Download</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Terminal Section -->
+    <section class="terminal-container">
+      <div class="container py-5">
+        <div class="text-center mb-4">
+          <h1 class="display-6 fw-bold text-white">Interactive Terminal</h1>
+          <p class="text-secondary">
+            Type <span class="text-success">'help'</span> to see available
+            commands
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-btn red"></div>
+            <div class="terminal-btn yellow"></div>
+            <div class="terminal-btn green"></div>
+            <span class="terminal-title">nishant@portfolio:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output">
+              <!-- Output will be added here -->
+            </div>
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">nishant@portfolio:~$</span>
+              <input
+                type="text"
+                class="terminal-input"
+                id="terminal-input"
+                placeholder="Type a command..."
+                autofocus
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Commands -->
+        <div class="text-center mt-4">
+          <p class="text-secondary mb-2">Quick commands:</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <button
+              class="btn btn-sm btn-outline-secondary quick-cmd"
+              data-cmd="help"
+            >
+              help
+            </button>
+            <button
+              class="btn btn-sm btn-outline-secondary quick-cmd"
+              data-cmd="about"
+            >
+              about
+            </button>
+            <button
+              class="btn btn-sm btn-outline-secondary quick-cmd"
+              data-cmd="skills"
+            >
+              skills
+            </button>
+            <button
+              class="btn btn-sm btn-outline-secondary quick-cmd"
+              data-cmd="projects"
+            >
+              projects
+            </button>
+            <button
+              class="btn btn-sm btn-outline-secondary quick-cmd"
+              data-cmd="contact"
+            >
+              contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-4 bg-dark text-center text-secondary border-top border-secondary"
+    >
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Nishant Naravarajula. All rights reserved.
+        </p>
+        <p class="mb-0 small">Built with HTML, CSS, JavaScript & Bootstrap</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Terminal JS -->
+    <script type="module" src="js/terminal.js"></script>
+  </body>
+</html>

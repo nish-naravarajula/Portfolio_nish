@@ -1,0 +1,434 @@
+/* ===== CSS Variables ===== */
+:root {
+  --primary: #0d6efd;
+  --primary-hover: #0b5ed7;
+  --dark: #212529;
+  --darker: #0a0a0a;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --success: #198754;
+}
+
+/* ===== Global Styles ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--darker);
+  color: var(--light);
+}
+
+/* Section Headings - Slightly muted */
+.display-6.fw-bold {
+  color: #c5c5c5;
+}
+
+/* Offset for fixed navbar */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+}
+
+.navbar-brand span {
+  color: var(--primary);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  padding-top: 80px;
+  background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+}
+
+#hero h1 {
+  letter-spacing: -1px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 350px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(207, 212, 212, 0.829);
+  border-color: rgba(55, 76, 109, 0.5);
+}
+
+/* Hello Text - Terminal Style */
+.hello-text {
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  color: #6c757d;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* Live Status Styles */
+.live-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Blinking animation for live indicator */
+.blink {
+  animation: blink 1.5s ease-in-out infinite;
+  font-size: 8px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+#status-text {
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 0.95rem;
+}
+
+/* ===== Skill Tags ===== */
+.skill-tag {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+.skill-tag:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* ===== Experience Section ===== */
+.experience-item {
+  padding-left: 20px;
+  border-left: 3px solid var(--primary);
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+}
+
+/* ===== Education Cards ===== */
+#education .card {
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#education .card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary) !important;
+}
+
+#education .card-title {
+  color: #faf4f4;
+}
+
+/* ===== Contact Section ===== */
+#contact .btn-outline-light:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+#resume-view-icon:hover {
+  color: var(--primary);
+  background-color: var(--darker) !important ;
+  border-color: var(--primary) !important ;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--darker) !important;
+}
+
+/* ===== Projects Page Styles ===== */
+
+/* Mini Hero */
+.mini-hero {
+  padding: 120px 0 60px;
+  background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+}
+
+/* Filter Tags */
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-tag {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+  background: transparent;
+  color: var(--light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: var(--dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project-card .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.project-card .tech-tag {
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  background-color: rgba(13, 110, 253, 0.2);
+  color: var(--primary);
+  border-radius: 15px;
+}
+
+.project-card .project-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Hidden class for filtering */
+.project-card.hidden {
+  display: none;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .live-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .experience-item {
+    padding-left: 15px;
+  }
+}
+
+/* ===== Scroll Animation Classes ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Terminal Page Styles (AI Generated) ===== */
+/* ===== Terminal Page Styles ===== */
+
+.terminal-container {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+}
+
+.terminal-window {
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terminal-header {
+  background-color: #16213e;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.terminal-btn.red {
+  background-color: #ff5f56;
+}
+.terminal-btn.yellow {
+  background-color: #ffbd2e;
+}
+.terminal-btn.green {
+  background-color: #27ca40;
+}
+
+.terminal-title {
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  margin-left: 10px;
+  font-family: "Consolas", "Monaco", monospace;
+}
+
+.terminal-body {
+  padding: 20px;
+  height: 500px;
+  overflow-y: auto;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.terminal-output {
+  color: #a0a0a0;
+}
+
+.terminal-output .command {
+  color: #27ca40;
+}
+
+.terminal-output .prompt {
+  color: #27ca40;
+}
+
+.terminal-output .error {
+  color: #ff5f56;
+}
+
+.terminal-output .success {
+  color: #27ca40;
+}
+
+.terminal-output .info {
+  color: #27ca40;
+}
+
+.terminal-output .highlight {
+  color: #0d6efd;
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.terminal-prompt {
+  color: #0d6efd;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #27ca40;
+  font-family: inherit;
+  font-size: inherit;
+  flex: 1;
+  caret-color: #27ca40;
+}
+
+.terminal-input::placeholder {
+  color: #505050;
+}
+
+.output-block {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.output-block:last-child {
+  border-bottom: none;
+}
+
+.ascii-art {
+  color: #27ca40;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .terminal-body {
+    height: 400px;
+    font-size: 0.85rem;
+  }
+
+  .ascii-art {
+    font-size: 0.5rem;
+  }
+}
