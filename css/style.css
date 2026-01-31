@@ -33,7 +33,10 @@ section {
 /* ===== Navbar ===== */
 .navbar {
   backdrop-filter: blur(10px);
-  background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+.navbar.bg-dark {
+  background-color: rgba(33, 37, 41, 0.95);
 }
 
 .navbar-nav .nav-link {
@@ -50,8 +53,8 @@ section {
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: var(--primary) !important;
+.navbar-dark .nav-link:hover {
+  color: var(--primary);
 }
 
 /* ===== Hero Section ===== */
@@ -158,7 +161,7 @@ section {
 
 #education .card:hover {
   transform: translateY(-5px);
-  border-color: var(--primary) !important;
+  border-color: var(--primary);
 }
 
 #education .card-title {
@@ -171,15 +174,15 @@ section {
   border-color: var(--primary);
 }
 
-#resume-view-icon:hover {
+#contact #resume-view-btn:hover {
   color: var(--primary);
-  background-color: var(--darker) !important ;
-  border-color: var(--primary) !important ;
+  background-color: var(--darker);
+  border-color: var(--primary);
 }
 
 /* ===== Footer ===== */
-footer {
-  background-color: var(--darker) !important;
+footer.bg-dark {
+  background-color: var(--darker);
 }
 
 /* ===== Projects Page Styles ===== */
@@ -294,7 +297,6 @@ footer {
 }
 
 /* ===== Terminal Page Styles (AI Generated) ===== */
-/* ===== Terminal Page Styles ===== */
 
 .terminal-container {
   padding-top: 80px;
@@ -328,9 +330,11 @@ footer {
 .terminal-btn.red {
   background-color: #ff5f56;
 }
+
 .terminal-btn.yellow {
   background-color: #ffbd2e;
 }
+
 .terminal-btn.green {
   background-color: #27ca40;
 }
