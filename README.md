@@ -101,11 +101,12 @@ portfolio/
 ├── js/
 │   ├── main.js         # Main JavaScript
 │   └── terminal.js     # Terminal functionality
-├── assets/
-│   ├── profile.png     # Profile picture
+├── assets/    
 │   ├── favicon.ico     # Site icon
-│   ├── screenshot.png  # README screenshot
 │   └── Nishant_Resume.pdf
+├── images/
+|   ├── profile.png
+|   └── image.png    
 ├── package.json        # Dependencies
 ├── eslint.config.js    # ESLint config
 ├── LICENSE             # MIT License
