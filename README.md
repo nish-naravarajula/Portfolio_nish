@@ -32,7 +32,7 @@ Build a responsive, accessible portfolio website using **vanilla HTML5**, **CSS3
 
 ## Screenshot
 
-![Portfolio Homepage](assets/image.png)
+![Portfolio Homepage](images/image.png)
 
 ---
 
